@@ -1,6 +1,6 @@
 # Calculator using React.js
 
-
+Basic Calculator made using React.js and useState() hook concept
 
 ## Available Scripts
 
