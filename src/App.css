@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(225deg,#FF3CAC,#784BA0,#2B86C5);
+  display: grid;
+  place-content: center;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  height: 80vh;
+  width: 50vh;
+  background-color: rgba(0,0,0,0.72);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.screen {
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 0.5rem;
+  grid-column: 1 / -1;
+  padding-right: 0.2rem;
+  padding-top: 0.3rem;
   color: white;
+  text-align: right;
+  font-size: 2.2rem;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  display: grid;
+  place-content: center;
+  border-radius: 47%;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease all;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.9);
+  transition: 0.2s ease all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-gray {
+  background-color: gray;
+  color: black;
+}
+
+.light-gray:hover {
+  background-color: white;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.orange:hover {
+  background-color: white;
+  color: orange;
+}
+a, .footer{
+  margin: auto;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75em;
+  font-weight: bold;
+  color:rgba(255, 255, 255, 0.5);
+  padding: 2vh;
+  transition: 0.3s ease all;
+}
+.footer:hover{
+  transform: scale(0.94);
+  transition: 0.3s ease all;
+}
+a:hover{
+  color: whitesmoke; 
+}
+.logo{
+  margin: auto;
+  height: 8vh;
+  width: 8vh;
+  transition: 0.3s ease all;
+}
+.logo:hover{
+  transform: scale(0.9);
+  transition: 0.3s ease all;
 }
