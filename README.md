@@ -1,4 +1,4 @@
-# Calculator using React.js
+# Basic Calculator
 
 Basic Calculator made using React.js and useState() hook concept
 
